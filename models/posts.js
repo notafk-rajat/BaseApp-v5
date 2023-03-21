@@ -1,0 +1,1 @@
+const mongoose=require("mongoose"),postSchema=new mongoose.Schema({content:{type:String,trim:!0},postedBy:{type:mongoose.Schema.Types.ObjectId,ref:"User"},likes:[{type:mongoose.Schema.Types.ObjectId,ref:"User"}],replyTo:{type:mongoose.Schema.Types.ObjectId,ref:"Post"}},{timestamps:!0}),Post=mongoose.model("Post",postSchema);module.exports=Post;

@@ -1,0 +1,1 @@
+const mongoose=require("mongoose"),chatSchema=new mongoose.Schema({content:{type:String,trim:!0},user:{type:String}},{timestamps:!0}),Chat=mongoose.model("Chat",chatSchema);module.exports=Chat;

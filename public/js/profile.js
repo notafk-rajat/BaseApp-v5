@@ -1,0 +1,1 @@
+$(document).ready(()=>{loadPosts()});async function loadPosts(){let t=await axios.get("/api/post",{params:{postedBy:profileUserId}});for(let a of t.data){let o=createPostHtml(a);$(".userPostsContainer").prepend(o)}}
